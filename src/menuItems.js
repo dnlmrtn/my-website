@@ -9,7 +9,7 @@ export const menuItems = [
     },
     {
         title: '05.08.2023',
-        url: 'https://github.com/dnlmrtn',
+        url: 'https://github.com/dnlmrtn/my-website',
     },
     {
         title: 'Projects',
