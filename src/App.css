@@ -1,0 +1,113 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4Ep0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notoserif/v22/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyscKtq8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif';
+  background-color: #edffe0;
+  color: #008080ff
+}
+
+header {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: #008080ff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1600px;
+  margin: 0px auto;
+  padding: 0px 0px;
+  font-family: 'Roboto Mono';
+  border-bottom: 2px solid #008080ff
+}
+
+button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 10px;
+  font-family: 'Roboto Mono';
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 10px;
+  font-family: 'Roboto Mono';
+  text-decoration: none;
+  /* Remove underline from link */
+  border: none;
+  /* Remove border from link */
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  margin: 0px auto;
+  padding: 0px 0px;
+  font-family: 'Roboto Mono';
+  list-style: none;
+}
+
+.menu-items {
+  position: relative;
+  font-size: 14px;
+}
+
+button span {
+  margin-left: 10px;
+}
+
+/* content */
+
+.content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+.content h2 {
+  margin-bottom: 1rem;
+}
+
+.content a {
+  color: #cc3852;
+  margin-right: 10px;
+}
