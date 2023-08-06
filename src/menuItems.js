@@ -1,10 +1,10 @@
 export const menuItems = [
     {
-        title: 'Home',
+        title: 'Home       ',
         url: '/home',
     },
     {
-        title: 'About',
+        title: 'About Me',
         url: '/about',
     },
     {
