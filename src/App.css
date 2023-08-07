@@ -28,54 +28,59 @@
 
 body {
   font-family: 'Noto Serif';
-  background-color: #edffe0;
-  color: #008080ff;
-  transition: background-color 0.5s ease;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 1s ease;
 }
 
 header {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  color: #008080ff;
+  color: var(--text-color);
 }
 
 nav {
   display: flex;
   align-items: left;
   justify-content: space-between;
-  width: 1500px;
+  width: 100%;
   margin: 0px auto;
-  padding: 0px 0px;
+  padding-left: 3%;
   font-family: 'Roboto Mono';
-  border-bottom: 2px solid #008080ff
+  border-bottom: 2px solid var(--text-color)
+}
+
+footer {
+  align-items: end;
 }
 
 button {
   display: flex;
   align-items: center;
   color: inherit;
-  font-size: inherit;
-  border: none;
+  font-size: 20%;
   background-color: transparent;
   cursor: pointer;
-  width: 100%;
-  padding: 10px 10px;
+  width: 60%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   font-family: 'Roboto Mono';
+  text-decoration: none;
+  border: none;
 }
 
 .link-button {
   display: flex;
   align-items: center;
   color: inherit;
-  font-size: inherit;
+  font-size: 20%;
   background-color: transparent;
   cursor: pointer;
-  width: 100%;
-  padding: 10px 10px;
+  width: 160%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   font-family: 'Roboto Mono';
   text-decoration: none;
-  /* Remove underline from link */
   border: none;
-  /* Remove border from link */
 }
 
 .menus {
@@ -85,7 +90,7 @@ button {
   width: auto;
   margin: 0px auto;
   padding: 0px 0px;
-  gap: 80px;
+  gap: 23px;
   font-family: 'Roboto Mono';
   list-style: none;
 }
@@ -96,7 +101,7 @@ button {
 }
 
 button span {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 /* content */
@@ -112,7 +117,125 @@ content {
   margin-bottom: 1rem;
 }
 
-.content a {
-  color: #cc3852;
-  margin-right: 10px;
+:root {
+  --text-color: #008080ff;
+  --background-color: #ffffff;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.separator {
+  background-color: var(--text-color);
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-family: 'Noto Serif';
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 1s ease;
+  }
+
+  header {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+  }
+
+  nav {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0px;
+    font-family: 'Roboto Mono';
+    border-bottom: 2px solid var(--text-color)
+  }
+
+  footer {
+    align-items: end;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-family: 'Roboto Mono';
+    text-decoration: none;
+    border: none;
+  }
+
+  .link-button {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-family: 'Roboto Mono';
+    text-decoration: none;
+    border: none;
+  }
+
+  .menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin: 0px auto;
+    padding: 0px 0px;
+    gap: 80px;
+    font-family: 'Roboto Mono';
+    list-style: none;
+  }
+
+  .menu-items {
+    position: relative;
+    font-size: 14px;
+  }
+
+  button span {
+    margin-left: 10px;
+  }
+
+  /* content */
+
+  content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    flex: 1;
+  }
+
+  .content h2 {
+    margin-bottom: 1rem;
+  }
+
+  :root {
+    --text-color: #008080ff;
+    --background-color: #ffffff;
+  }
+
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  .separator {
+    background-color: var(--text-color);
+  }
 }

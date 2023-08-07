@@ -3,90 +3,71 @@ import './Home.css';
 import '../fonts/fonts.css'
 
 const Home = () => {
-    const [bodyColor, setBodyColor] = useState('#edffe0');
 
-    const changeBodyColor = (color) => {
-        setBodyColor(color);
-        document.body.style.backgroundColor = color;
+    const [_, setTheme] = useState({
+        textColor: '#008080ff',
+        backgroundColor: '#ffffff',
+    });
+
+    const updateTheme = (textColor, backgroundColor) => {
+        setTheme({ textColor, backgroundColor });
+        document.documentElement.style.setProperty('--text-color', textColor);
+        document.documentElement.style.setProperty('--background-color', backgroundColor);
     };
 
     return (
         <div className="home-container">
-            <div className="column column-1">
-                <div className="profile-container"> {/* Added this div for the vertical line */}
-                    <div className="round-rectangle" style={{ backgroundColor: bodyColor }}>
-                        <div className="heading">
-                            Daniel <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Martin
-                        </div>
-                    </div>
-                    <br />
-                    <br />
 
+            <div className="round-rectangle">
+                <div className='rectangle-container'>
+                    <div className="heading">
+                        Daniel Martin
+                    </div>
+                    <div className='text-left'><br /></div>
                     <div className="info-section">
                         <div className="content-container">
-                            <div className='content-left'>Age</div>
-                            <div className='content-right'>22</div>
+                            <div className='text-left'>Age</div>
+                            <div className='text-right'>22</div>
                         </div>
                         <div className="content-container">
-                            <div className='content-left'>Degree</div>
-                            <div className='content-right'>Math &amp; Eng</div>
+                            <div className='text-left'>Degree</div>
+                            <div className='text-right'>Math &amp; Eng</div>
                         </div>
                         <div className="content-container">
-                            <div className='content-left'>Working on</div>
-                            <div className='content-right'>RecessD</div>
+                            <div className='text-left'>Working on</div>
+                            <div className='text-right'>RecessD</div>
                         </div>
                         <div className="content-container">
-                            <div className='content-left'>Fav. Food</div>
-                            <div className='content-right'>Tacos</div>
+                            <div className='text-left'>Fav. Food</div>
+                            <div className='text-right'>Tacos</div>
                         </div>
                         <div className="content-container">
-                            <div className='content-left'>Fav Quote</div>
+                            <div className='text-left'>Fav. Quote</div>
 
-                            <div className='content-right'></div>
-                        </div>
-                        <div className="content-container">
+                            <div className='text-right'></div>
                         </div>
                     </div>
-                    <br />
-                    <br />
                     <div className='info-section'>
-                        <div className='quote'>
+                        <div className='text-left'>
                             "What I cannot create I do not understand."
                         </div>
-                        <div className='quote-author'>
+                        <div className='italic-text'>
                             Richard Feynman
                         </div>
 
                     </div>
+                    <div className="text-left">
+                        <br />
+                        Finished BASc. at Queen’s in
+                        Math &amp; Engineering, Applied Mechanics option.
+                        Currently building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
+                        <br />
+                        For work history, click About Me.<br />
+                        For passion projects, hit Projects.<br />
+                        For my interests, go to Personal.<br />
+                        Feel free to reach out.
+                    </div>
                 </div>
-            </div>
-            <div className="separator"></div>
-            <div className="column column-2">
-                <div className="content">
-                    <br /><br /><br /><br />
-                    Finished BASc. at Queen’s in <br />
-                    <br />
-                    Math &amp; Engineering, Applied Mechanics option.<br />
-                    <br />
-                    Currently implementing ML-based control systems at RecessD, a startup developing wireless building automation.<br />
-                    <br />
-                    To see more work history,<br /> hit About Me.<br />
-                    <br />
-                    To see passion projects,<br /> see Projects.<br />
-                    <br />
-                    To get to know me,<br /> check out Personal.<br />
-                    <br />
-                    Or you can just reach out,<br />
-                    I don’t bite.<br />
-                    <br />
-
-                </div>
-            </div>
-            <div className="separator"></div>
-            <div className="column column-3">
-                <button onClick={() => changeBodyColor('#edffe0')}>Set Color to #edffe0</button>
-                <button onClick={() => changeBodyColor('#fbfeeb')}>Set Color to #fbfeeb</button>
             </div>
         </div >
     );

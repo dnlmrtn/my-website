@@ -1,59 +1,27 @@
 .home-container {
     display: flex;
-    align-items: stretch;
-    height: 100%;
-}
-
-.column {
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
-.column-1 {
-    width: 1600px;
-}
-
-.column-2 {
-    width: flex
-}
-
-.column-3 {
-    width: 1600px;
-}
-
-.separator {
-    background-color: #008080ff;
-    width: 3px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.heading {
-    text-align: left;
-    font-family: Neue Montreal;
-    font-size: 100px;
-}
-
-.content {
-    text-align: left;
-    font-family: Neue Montreal;
-    font-size: 16px;
-}
-
-.profile-container {
+.rectangle-container {
     /* Bold vertical line */
-    padding-left: 20px;
-    /* Space between the line and the content */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    justify-content: center;
+    padding-bottom: 3%
+        /* Space between the line and the content */
 }
 
 .content-container {
     display: flex;
     justify-content: space-between;
-    width: 450px;
-    /* Matching the width of the .round-rectangle */
-    border-top: 1px solid #008080ff;
+    width: 100%;
+    border-top: 1px solid var(--text-color);
     /* Horizontal line */
     padding: 5px 0;
     /* Padding around the line */
@@ -61,66 +29,172 @@
     font-size: 16px;
 }
 
-.content-left {
+.heading {
     text-align: left;
-    /* Align text to the right to match the line */
-    padding-left: 10px;
-    /* Takes up remaining space */
+    font-family: Neue Montreal Bold;
+    font-size: 200%;
 }
 
-.content-right {
+.text-left {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 100%;
+    font-family: Neue Montreal;
+}
+
+.text-right {
     text-align: right;
-    /* Align text to the left */
     padding-right: 10px;
-    /* Adjust width as needed */
+    font-size: 100%;
 }
 
-
-
-.info-section {
-    font-family: Neue Montreal;
-    font-size: 16px;
-    border-left: 5px solid #008080ff;
-    padding-left: 10px;
-    padding-top: 5px;
-}
-
-.info-line {
-    display: inline-block;
-    height: 1px;
-    background-color: #008080ff;
-    width: 450px;
-    vertical-align: middle;
-}
-
-.quote {
-    font-family: Neue Montreal;
-    font-size: 24px;
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.quote-author {
+.italic-text {
     padding-top: 3px;
     padding-bottom: 5px;
     padding-left: 10px;
     font-family: Neue Montreal Italic;
     font-size: 18px;
     text-align: left;
+    color: var(--text-color);
+}
+
+.info-section {
+    font-family: Neue Montreal;
+    font-size: 16px;
+    border-left: 5px solid var(--text-color);
+    padding-left: 10px;
+    padding-top: 5px;
+    width: flex;
 }
 
 .round-rectangle {
-    width: 450px;
-    height: 230px;
+    width: 90%;
+    max-width: 600px;
+    height: flex;
     border-radius: 20px;
-    border-color: #008080ff;
+    border-color: var(--text-color);
     border: 3px solid;
+    background-color: transparent;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    text-align: left;
     font-family: Neue Montreal Medium;
-    transition: background-color 1s ease;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: 9;
+    grid-gap: 20px;
+    width: 100px;
+}
+
+.color-row {
+    display: flex;
+    justify-content: center
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+    .home-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .round-rectangle {
+        width: 600px;
+        height: flex;
+        border-color: var(--text-color);
+        transition: border-color 1s ease;
+        border: 3px solid;
+        background-color: transparent;
+    }
+
+    .rectangle-container {
+        /* Bold vertical line */
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* Space between the line and the content */
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid var(--text-color);
+        /* Horizontal line */
+        padding: 5px 0;
+        /* Padding around the line */
+        font-family: Neue Montreal;
+        font-size: 16px;
+    }
+
+    .heading {
+        text-align: left;
+        font-family: Neue Montreal Bold;
+        font-size: 60px;
+    }
+
+    .text-left {
+        text-align: left;
+        padding-left: 10px;
+        font-size: 22px;
+        font-family: Neue Montreal;
+    }
+
+    .text-right {
+        text-align: right;
+        padding-right: 10px;
+        font-size: 22px;
+    }
+
+    .italic-text {
+        padding-top: 3px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        font-family: Neue Montreal Italic;
+        font-size: 18px;
+        text-align: left;
+        color: var(--text-color);
+    }
+
+    .info-section {
+        font-family: Neue Montreal;
+        font-size: 16px;
+        border-left: 5px solid var(--text-color);
+        padding-left: 10px;
+        padding-top: 5px;
+        width: flex;
+    }
+
+    .color-grid {
+        display: grid;
+        grid-template-columns: 9;
+        grid-gap: 20px;
+        width: 100px;
+    }
+
+    .color-row {
+        display: flex;
+        justify-content: center
+    }
+
+    .color-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 6px solid;
+        cursor: pointer;
+        padding-left: 10px;
+    }
 }
