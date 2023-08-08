@@ -1,4 +1,5 @@
 import './About.css'
+import '../App.css'
 
 const About = () => {
     return <div className="about-container">
@@ -46,6 +47,10 @@ const About = () => {
                 Using adobe software to edit high quality videos.<br />
                 Creative direction in video planning process.<br />
                 Project management and outreach to clients.
+            </div>
+        </div>
+        <div className='vertical-container'>
+            <div className='vertical'>
             </div>
         </div>
     </div >

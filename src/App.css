@@ -1,20 +1,9 @@
-/* cyrillic-ext */
 @font-face {
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4Ep0.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-weight: 100;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/notoserif/v22/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyscKtq8.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -27,7 +16,6 @@
 }
 
 body {
-  font-family: 'Noto Serif';
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 1s ease;
@@ -51,12 +39,11 @@ nav {
 
 footer {
   align-items: end;
-  margin-top: 20px;
-  padding-top: 40px;
-  position: absolute;
-  left: 0;
+  background-color: var(--background-color);
+  border-top: 2px var(--text-color);
+  position: fixed;
+  width: 100%;
   bottom: 0;
-  right: 0;
 }
 
 button {
@@ -74,7 +61,7 @@ button {
   border: none;
 }
 
-.link-button {
+link-button {
   display: flex;
   align-items: center;
   color: inherit;
@@ -89,34 +76,13 @@ button {
   border: none;
 }
 
-.menus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: auto;
-  margin: 0px auto;
-  padding: 0px 0px;
-  gap: 23px;
-  font-family: 'Roboto Mono';
-  list-style: none;
-}
-
-.menu-items {
-  position: relative;
-  font-size: 14px;
-}
-
-button span {
-  margin-left: 0px;
-}
-
 /* content */
 
 content {
   max-width: 1600px;
   margin: 0 auto;
   padding: 15px 10px;
-
+  min-height: calc(100vh - 34px);
 }
 
 .content h2 {
@@ -163,10 +129,16 @@ body {
     border-bottom: 2px solid var(--text-color)
   }
 
-  footer {
+  .footer {
     align-items: end;
-    margin-top: 20px;
-
+    background-color: var(--background-color);
+    border-top: 2px solid var(--text-color);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transition: background-color 1s ease;
   }
 
   button {
@@ -246,4 +218,13 @@ body {
   .separator {
     background-color: var(--text-color);
   }
+
+  .color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid;
+    cursor: pointer;
+    padding-left: 10px;
+}
 }

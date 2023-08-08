@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; // Import useState hook
+import '../App.css'
 import './Home.css';
 import '../fonts/fonts.css'
 
@@ -17,7 +18,6 @@ const Home = () => {
 
     return (
         <div className="home-container">
-
             <div className="round-rectangle">
                 <div className='rectangle-container'>
                     <div className="heading">
@@ -70,6 +70,7 @@ const Home = () => {
                 </div>
             </div>
         </div >
+
     );
 };
 

@@ -15,7 +15,6 @@
     padding-top: 3%;
     justify-content: center;
     padding-bottom: 3%
-        /* Space between the line and the content */
 }
 
 .content-container {
@@ -95,14 +94,7 @@
     justify-content: center
 }
 
-.color-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 6px solid;
-    cursor: pointer;
-    padding-left: 10px;
-}
+
 
 @media only screen and (min-width: 800px) {
     .home-container {
@@ -191,14 +183,5 @@
     .color-row {
         display: flex;
         justify-content: center
-    }
-
-    .color-circle {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 6px solid;
-        cursor: pointer;
-        padding-left: 10px;
     }
 }
