@@ -30,7 +30,7 @@ const Projects = () => {
             Tested a variety of machine learning architectures for classification.<br/>
             SVM achieved CV accuracy of 94.4% for blink detection with an F1 score of 96.3%.<br/>
             Demonstrated live at <a href="https://www.cucai.ca/" target="_blank" rel="noopener noreferrer">CUCAI</a><br/>
-            <a href="http://www.recessd.com" target="_blank" rel="noopener noreferrer">Download the PDF</a>
+            <a href="https://github.com/dnlmrtn/my-website/blob/master/src/media/BCI.pdf" download>Download the PDF</a>
         </div>
     </div>
     </div>
