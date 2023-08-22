@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; // Import useState hook
+import { Link } from 'react-router-dom';
 import '../App.css'
 import './Home.css';
 import '../fonts/fonts.css'
@@ -68,9 +69,9 @@ const Home = () => {
                     <br />
                     <div className="info-section">
                         <div className="text-left">
-                            For work history, click About Me.<br />
-                            For passion projects, hit Projects.<br />
-                            For my interests, go to Personal.<br />
+                            For work history, click <Link to="/about">About Me.</Link><br />
+                            For passion projects, hit <Link to="/projects">Projects.</Link><br />
+                            For my interests, go to <Link to="/personal">Personal.</Link><br />
                             Feel free to reach out.
                         </div>
                     </div>

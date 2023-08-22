@@ -26,7 +26,7 @@ const About = () => {
                 <div className='superscript'> Formula Solutions Inc. </div>
             </div>
             <div className='about-description'>
-                Designing automated manufacturing line for aerospace carbon fiber components.<br />
+                Designed automated manufacturing line for aerospace carbon fiber components.<br />
                 Tested resin mixing equipment to ensure compliance with standards.<br />
                 Modeled 3D printed fixtures for drill press, pneumatic shears. <br />
                 Supervised installation of equipment on the factory floor.<br />
@@ -44,8 +44,8 @@ const About = () => {
             </div>
             <div className='about-description'>
                 Freelance work capturing photo/video for residential and commercial clients.<br />
-                Using adobe software to edit high quality videos.<br />
-                Creative direction in video planning process.<br />
+                Documenting renovations, real estate listings, and personal showcases.<br />
+                Creative direction in filming/editing process.<br />
                 Project management and outreach to clients.
             </div>
         </div>
@@ -53,6 +53,21 @@ const About = () => {
             <div className='vertical'>
             </div>
         </div>
+        <div className="about-item">
+            <div className='title-container'>
+                <div className='about-title'>Mathematics Tutor.</div>
+                <div className='superscript'> Self Employed </div>
+            </div>
+            <div className='about-description'>
+                Tutoring services for unviersity math/physics coursework.<br />
+                Operating through Queen's Eng Soc. and freelance work.<br />
+                Uni Subjects: Calculus, Lin Alg., Fluid/Solid-Dynamics.<br />
+                HS Subjects: Calc, Functions, Data Management, Physics.
+
+
+            </div>
+        </div>
+        <br /><br /><br />
     </div >
 };
 

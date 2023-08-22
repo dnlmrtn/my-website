@@ -22,6 +22,7 @@
     justify-content: space-between;
     width: 100%;
     border-top: 1px solid var(--text-color);
+    transition: --text-color 1s ease;
     /* Horizontal line */
     padding: 5px 0;
     /* Padding around the line */
@@ -56,12 +57,14 @@
     font-size: 18px;
     text-align: left;
     color: var(--text-color);
+    transition: --text-color 1s ease;
 }
 
 .info-section {
     font-family: Neue Montreal;
     font-size: 16px;
     border-left: 5px solid var(--text-color);
+    transition: --text-color 1s ease;
     padding-left: 10px;
     padding-top: 3px;
     width: flex;
@@ -72,8 +75,8 @@
     max-width: 600px;
     height: flex;
     border-radius: 20px;
-    border-color: var(--text-color);
-    border: 3px solid;
+    border-color: var(--background-color);
+    border: 0px solid;
     background-color: transparent;
     display: flex;
     align-items: flex-start;
@@ -109,7 +112,7 @@
         height: flex;
         border-color: var(--text-color);
         transition: border-color 1s ease;
-        border: 3px solid;
+        border: 0px solid;
         background-color: transparent;
 
     }
