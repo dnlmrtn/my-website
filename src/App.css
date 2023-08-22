@@ -56,6 +56,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  display: inline;
 }
 
 button {
@@ -113,6 +114,11 @@ body {
   flex-direction: column;
 }
 
+.color-row {
+  display: flex;
+  justify-content: left
+}
+
 .separator {
   background-color: var(--text-color);
 }
@@ -153,11 +159,13 @@ body {
     align-items: end;
     background-color: var(--background-color);
     border-top: 2px solid var(--text-color);
+    font-family: Neue Montreal;
     padding-top: 4px;
     padding-bottom: 4px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    display: flex
   }
 
   button {
@@ -245,5 +253,38 @@ body {
     border: 6px solid;
     cursor: pointer;
     padding-left: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-left {
+    text-align: left;
+    width: 33.33%;
+    font-family: Neue Montreal;
+    padding-left: 1%
+  }
+
+  .footer-center {
+    text-align: center;
+    width: 33.33%;
+    font-family: Neue Montreal;
+    height: 30px;
+
+  }
+
+  .footer-right {
+    text-align: right;
+    width: 33.33%;
+    font-family: Neue Montreal;
+    height: 30px;
+    padding-right: 1%;
+  }
+
+  .color-row {
+    display: flex;
+    justify-content: left
   }
 }

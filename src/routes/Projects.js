@@ -50,6 +50,7 @@ const Projects = () => {
                 <a href="https://www.queensrelectric.ca/" target="_blank" rel="noopener noreferrer">queensrelectric.ca</a>
             </div>
         </div>
+        <br /><br /><br />
     </div>
 };
 

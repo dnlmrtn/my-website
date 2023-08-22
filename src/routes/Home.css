@@ -76,6 +76,7 @@
     height: flex;
     border-radius: 20px;
     border-color: var(--background-color);
+    transition: border-color 1s ease;
     border: 0px solid;
     background-color: transparent;
     display: flex;
@@ -91,12 +92,6 @@
     grid-gap: 20px;
     width: 100px;
 }
-
-.color-row {
-    display: flex;
-    justify-content: center
-}
-
 
 
 @media only screen and (min-width: 800px) {
@@ -181,10 +176,5 @@
         grid-template-columns: 9;
         grid-gap: 20px;
         width: 100px;
-    }
-
-    .color-row {
-        display: flex;
-        justify-content: center
     }
 }
