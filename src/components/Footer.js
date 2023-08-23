@@ -34,7 +34,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className='footer-right'>
-                <a href='https://github.com/dnlmrtn/my-website'>
+                <a href='https://github.com/dnlmrtn/my-website' target='_blank' rel="noreferrer">
                     22.08.2022
                 </a>
             </div>
