@@ -1,4 +1,6 @@
 import './About.css'
+import thesisPDF from '../media/Thesis.pdf';
+import bciPDF from '../media/BCI.pdf'
 
 const Projects = () => {
     return <div className="about-container">
@@ -12,7 +14,7 @@ const Projects = () => {
                 Simulated glucose-insulin interraction using non-linear dynamic modeling.<br />
                 Applied state-space analysis to Q-Learning in simulated environment.<br />
                 Awarded <a href="https://www.queensu.ca/mathstat/undergraduate/current-undergraduate/mthe/projects" target="_blank" rel="noopener noreferrer">Keyser Prize</a> for outstanding thesis. <br />
-                <a href={'https://github.com/dnlmrtn/my-website/blob/master/src/media/Thesis.pdf'} download="Thesis-DM.pdf"> Download the PDF</a>
+                <a href={thesisPDF} download="Thesis-DM.pdf">Download the PDF</a>
             </div>
         </div>
         <div className='vertical-container'>
@@ -30,7 +32,7 @@ const Projects = () => {
                 Tested a variety of machine learning architectures for classification.<br />
                 SVM achieved CV accuracy of 94.4% for blink detection with an F1 score of 96.3%.<br />
                 Demonstrated live at <a href="https://www.cucai.ca/" target="_blank" rel="noopener noreferrer">CUCAI</a><br />
-                <a href="https://github.com/dnlmrtn/my-website/blob/master/src/media/BCI.pdf" download>Download the PDF</a>
+                <a href={bciPDF} download="EEG-BCI-DM.pdf">Download the PDF</a>
             </div>
         </div>
         <div className='vertical-container'>
@@ -43,8 +45,8 @@ const Projects = () => {
                 <div className='superscript'>Relectric</div>
             </div>
             <div className='about-description'>
-                Designed battery enclosures and active cooling system for electric go kart.<br />
-                Analyzed models via flow/temperature simulations in SOLIDWORKS.<br />
+                Led team designing battery enclosures/active cooling system for electric go kart.<br />
+                Analyzed models using flow/temperature simulations in SOLIDWORKS.<br />
                 Modeled and fabricated enclosures using sheet metal brake.<br />
                 Provided bend/weld drawings to machinists.<br />
                 <a href="https://www.queensrelectric.ca/" target="_blank" rel="noopener noreferrer">queensrelectric.ca</a>
