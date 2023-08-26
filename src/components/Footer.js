@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; // Import useState hook
+import React, { useState } from 'react';
+import './Footer.css'
 
 const Footer = () => {
     const [_, setTheme] = useState({
@@ -11,7 +12,6 @@ const Footer = () => {
         document.documentElement.style.setProperty('--text-color', textColor);
         document.documentElement.style.setProperty('--background-color', backgroundColor);
     };
-    const backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color').trim();
 
     return (
         <div className='footer'>

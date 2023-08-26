@@ -156,7 +156,6 @@ body {
   }
 
   .footer {
-    align-items: end;
     background-color: var(--background-color);
     border-top: 2px solid var(--text-color);
     font-family: Neue Montreal;
