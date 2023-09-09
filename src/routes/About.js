@@ -9,7 +9,7 @@ const About = () => {
                 <div className='superscript'> RecessD Automation </div>
             </div>
             <div className='about-description'>
-                Designing reinforcement learning feeback control for industrial IoT systems.<br />
+                Designing reinforcement learning feedback control for industrial IoT systems.<br />
                 Saving energy cost ~$10 000, CO2 reduction of ~1200kg per annum. <br />
                 Mechanical design for embedded hardware products.<br />
                 Web development/UI design.<br />
