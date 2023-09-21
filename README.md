@@ -12,3 +12,4 @@ This repository contains the source code for my personal website, a platform whe
 - About Me section
 - Portfolio showcasing my projects
 - Music/Books I'm passionate about
+- Mildly addicting color customization
