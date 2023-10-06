@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
             <div className='about-description'>
                 Led team designing battery enclosures/active cooling system for electric go kart.<br />
-                Analyzed models using flow/temperature simulations in SOLIDWORKS.<br />
+                Analyzed CAD models using flow/temperature simulations in SOLIDWORKS.<br />
                 Modeled and fabricated enclosures using sheet metal brake.<br />
                 Provided bend/weld drawings to machinists.<br />
                 <a href="https://www.queensrelectric.ca/" target="_blank" rel="noopener noreferrer">queensrelectric.ca</a>

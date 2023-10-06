@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div className='footer-right'>
                 <a href='https://github.com/dnlmrtn/my-website' target='_blank' rel="noreferrer">
-                    25.08.2022
+                    06.10.2023
                 </a>
             </div>
 

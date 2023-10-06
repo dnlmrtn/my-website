@@ -55,7 +55,7 @@ const About = () => {
         </div>
         <div className="about-item">
             <div className='title-container'>
-                <div className='about-title'>Mathematics Tutor</div>
+                <div className='about-title'>Tutor</div>
                 <div className='superscript'> Self Employed </div>
             </div>
             <div className='about-description'>

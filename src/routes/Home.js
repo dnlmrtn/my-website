@@ -39,17 +39,9 @@ const Home = () => {
                         <div className='text-right'>RecessD</div>
                     </div>
                     <div className="content-container">
-                        <div className='text-left'>Fav. Food</div>
-                        <div className='text-right'>Tacos</div>
-                    </div>
-                    <div className="content-container">
-                        <div className='text-left'>Fav. Quote</div>
-
-                        <div className='text-right'></div>
-                    </div>
-
-                    <div className='text-left'>
-                        "What I cannot create I do not understand."
+                        <div className='text-left'>
+                            "What I cannot create I do not understand."
+                        </div>
                     </div>
                     <div className='italic-text'>
                         Richard Feynman
