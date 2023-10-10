@@ -24,8 +24,6 @@ const Home = () => {
                     <div className="heading">
                         Daniel Martin
                     </div>
-                    <div className='text-left'><br /></div>
-
                     <div className="content-container">
                         <div className='text-left'>Age</div>
                         <div className='text-right'>22</div>
@@ -45,8 +43,6 @@ const Home = () => {
                     </div>
                     <div className='italic-text'>
                         Richard Feynman
-                        <br />
-                        <br />
 
                     </div>
                     <div className="info-section">
@@ -54,11 +50,9 @@ const Home = () => {
                             Finished BASc. at Queen’s in
                             Math &amp; Engineering, Applied Mechanics option.
                             Currently building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
-
                         </div>
 
                     </div>
-                    <br />
                     <div className="info-section">
                         <div className="text-left">
                             For work history, click <Link to="/about">About Me.</Link><br />

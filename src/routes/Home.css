@@ -1,20 +1,22 @@
+* {
+    transition: background-color 2s ease, color 2s ease, border-color 2s ease text-color 2s ease;
+}
+
 .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
 .rectangle-container {
     /* Bold vertical line */
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
+    padding-left: 4px;
+    padding-right: 4px;
     justify-content: center;
-    padding-bottom: 3%
+    padding-bottom: 4px
 }
 
 .content-container {
@@ -22,9 +24,9 @@
     justify-content: space-between;
     width: 100%;
     border-top: 1px solid var(--text-color);
-    transition: --text-color 1s ease;
+    transition: --text-color 2s ease;
     /* Horizontal line */
-    padding: 5px 0;
+    padding: 2% 0;
     /* Padding around the line */
     font-family: Neue Montreal;
     font-size: 16px;
@@ -38,35 +40,38 @@
 
 .text-left {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 4%;
     font-size: 100%;
     font-family: Neue Montreal;
 }
 
 .text-right {
     text-align: right;
-    padding-right: 10px;
+    padding-right: 4%;
     font-size: 100%;
 }
 
 .italic-text {
-    padding-top: 3px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
     font-family: Neue Montreal Italic;
     font-size: 18px;
     text-align: left;
     color: var(--text-color);
-    transition: --text-color 1s ease;
+    transition: --text-color 2s ease;
 }
 
 .info-section {
     font-family: Neue Montreal;
     font-size: 16px;
     border-left: 5px solid var(--text-color);
-    transition: --text-color 1s ease;
-    padding-left: 10px;
-    padding-top: 3px;
+    transition: --text-color 2s ease border-color 2s ease;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     width: flex;
 }
 
@@ -76,49 +81,44 @@
     height: flex;
     border-radius: 20px;
     border-color: var(--background-color);
-    transition: border-color 1s ease;
+    transition: border-color 2s ease;
     border: 0px solid;
     background-color: transparent;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     font-family: Neue Montreal Medium;
-    transition: border-color 1s ease;
-}
-
-.color-grid {
-    display: grid;
-    grid-template-columns: 9;
-    grid-gap: 20px;
-    width: 100px;
+    transition: border-color 2s ease;
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
+    * {
+        transition: background-color 2s ease, color 2s ease, border-color 2s ease text-color 2s ease;
+    }
+
     .home-container {
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
+
     }
 
     .round-rectangle {
         width: 600px;
         height: flex;
         border-color: var(--text-color);
-        transition: border-color 1s ease;
+        transition: border-color 2s ease;
         border: 0px solid;
         background-color: transparent;
 
     }
 
     .rectangle-container {
-        /* Bold vertical line */
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /* Space between the line and the content */
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 4%;
     }
 
     .content-container {
@@ -127,7 +127,8 @@
         width: 100%;
         border-top: 1px solid var(--text-color);
         /* Horizontal line */
-        padding: 5px 0;
+        padding-top: 6px;
+        padding-bottom: 6px;
         /* Padding around the line */
         font-family: Neue Montreal;
         font-size: 16px;
@@ -137,6 +138,8 @@
         text-align: left;
         font-family: Neue Montreal Bold;
         font-size: 60px;
+        margin-bottom: 24px;
+        margin-top: 24px;
     }
 
     .text-left {
@@ -165,9 +168,15 @@
     .info-section {
         font-family: Neue Montreal;
         font-size: 16px;
-        border-left: 5px solid var(--text-color);
+
+        border-left: 4px solid var(--text-color);
+        margin-top: 24px;
+        margin-bottom: 24px;
+
         padding-left: 10px;
         padding-top: 5px;
+        padding-bottom: 5px;
+
         width: flex;
     }
 

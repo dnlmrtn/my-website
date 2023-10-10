@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Footer.css'
+
 
 const Footer = () => {
     const [_, setTheme] = useState({
@@ -38,8 +38,6 @@ const Footer = () => {
                     06.10.2023
                 </a>
             </div>
-
-
         </div>
     );
 };
