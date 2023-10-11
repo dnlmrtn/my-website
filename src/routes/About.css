@@ -8,11 +8,7 @@
     padding-bottom: 5%;
 }
 
-.vertical-container {
-    text-align: left;
-    align-items: center;
-    display: flex;
-}
+
 
 .title-container {
     display: flex;
@@ -36,20 +32,20 @@
     font-family: Neue Montreal Medium;
     transition: border-color 1s ease;
     flex-direction: column;
-    font-size: 50%;
+    font-size: 16px;
 }
 
 .about-title {
     text-align: left;
     justify-content: left;
     font-family: Neue Montreal Bold;
-    font-size: 200%;
+    font-size: 32px;
 }
 
 .superscript {
     text-align: left;
     padding-left: 10px;
-    font-size: 100%;
+    font-size: 16px;
     font-family: Neue Montreal;
 }
 
@@ -62,15 +58,7 @@
     color: inherit;
 }
 
-.vertical {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 2px;
-    background-color: var(--text-color);
-    height: 30px;
-    font-family: Neue Montreal;
-    text-justify: left;
-}
+
 
 @media only screen and (min-width: 800px) {
     .about-container {
@@ -82,18 +70,12 @@
         padding-top: 2%;
         padding-bottom: 5%;
     }
-    
-    .vertical-container {
-        text-align: left;
-        align-items: center;
-        display: flex;
-    }
-    
+
     .title-container {
         display: flex;
         align-items: top;
     }
-    
+
     .about-item {
         width: 180%;
         max-width: 600px;
@@ -111,39 +93,29 @@
         font-family: Neue Montreal Medium;
         transition: border-color 1s ease;
         flex-direction: column;
-        font-size: 100%;
+        font-size: 16px;
     }
-    
+
     .about-title {
         text-align: left;
         justify-content: left;
         font-family: Neue Montreal Bold;
-        font-size: 200%;
+        font-size: 32px;
     }
-    
+
     .superscript {
         text-align: left;
         padding-left: 10px;
-        font-size: 100%;
+        font-size: 16px;
         font-family: Neue Montreal;
     }
-    
+
     .about-description {
         display: block;
         text-align: left;
     }
-    
+
     .about-description a {
         color: inherit;
-    }
-    
-    .vertical {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 2px;
-        background-color: var(--text-color);
-        height: 80px;
-        font-family: Neue Montreal;
-        text-justify: left;
     }
 }

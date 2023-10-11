@@ -28,6 +28,7 @@ const Home = () => {
                         <div className='text-left'>Age</div>
                         <div className='text-right'>22</div>
                     </div>
+
                     <div className="content-container">
                         <div className='text-left'>Degree</div>
                         <div className='text-right'>Math &amp; Eng</div>
@@ -36,30 +37,24 @@ const Home = () => {
                         <div className='text-left'>Working on</div>
                         <div className='text-right'>RecessD</div>
                     </div>
-                    <div className="content-container">
-                        <div className='text-left'>
-                            "What I cannot create I do not understand."
+                    <div className='vertical-container'>
+                        <div className='vertical'>
                         </div>
                     </div>
-                    <div className='italic-text'>
-                        Richard Feynman
-
+                    <div className="text-left">
+                        Finished BASc. at Queen’s in
+                        Math &amp; Engineering, Applied Mechanics option.
+                        Currently building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
                     </div>
-                    <div className="info-section">
-                        <div className="text-left">
-                            Finished BASc. at Queen’s in
-                            Math &amp; Engineering, Applied Mechanics option.
-                            Currently building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
+                    <div className='vertical-container'>
+                        <div className='vertical'>
                         </div>
-
                     </div>
-                    <div className="info-section">
-                        <div className="text-left">
-                            For work history, click <Link to="/about">About Me.</Link><br />
-                            For passion projects, hit <Link to="/projects">Projects.</Link><br />
-                            For my interests, go to <Link to="/personal">Personal.</Link><br />
-                            Feel free to reach out.
-                        </div>
+                    <div className="text-left">
+                        For work history, click <Link to="/about">About Me.</Link><br />
+                        For passion projects, hit <Link to="/projects">Projects.</Link><br />
+                        For my interests, go to <Link to="/personal">Personal.</Link><br />
+                        Feel free to reach out.
                     </div>
                 </div>
             </div>
