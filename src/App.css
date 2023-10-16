@@ -196,6 +196,17 @@ body {
   align-items: center;
 }
 
+.vertical-small {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 2px;
+  background-color: var(--text-color);
+  height: 32px;
+  font-family: Neue Montreal;
+  text-justify: center;
+  align-items: center;
+}
+
 @media only screen and (min-width: 800px) {
 
   body,
