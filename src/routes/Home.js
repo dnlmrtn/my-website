@@ -38,7 +38,7 @@ const Home = () => {
                         <div className='text-right'>RecessD</div>
                     </div>
                     <div className='vertical-container'>
-                        <div className='vertical'>
+                        <div className='vertical-small'>
                         </div>
                     </div>
                     <div className="text-left">
@@ -47,7 +47,7 @@ const Home = () => {
                         Currently building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
                     </div>
                     <div className='vertical-container'>
-                        <div className='vertical'>
+                        <div className='vertical-small'>
                         </div>
                     </div>
                     <div className="text-left">
