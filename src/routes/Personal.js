@@ -1,3 +1,5 @@
+import './Work.css'
+
 const Personal = () => {
     return <div className="about-container">
         <div className="about-item">

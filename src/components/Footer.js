@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css'
 
 
 const Footer = () => {
@@ -26,15 +27,15 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-center'>
-                <a href='https://github.com/dnlmrtn' target='_blank' rel="noreferrer">
+                <a href='https://github.com/dnlmrtn' target='_blank' rel="noreferrer" className='link-button'>
                     GitHub
-                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href='https://www.linkedin.com/in/daniel-martin-0787/' target='_blank' rel="noreferrer">
+                </a>
+                <a href='https://www.linkedin.com/in/daniel-martin-0787/' target='_blank' rel="noreferrer" className='link-button'>
                     LinkedIn
                 </a>
             </div>
             <div className='footer-right'>
-                <a href='https://github.com/dnlmrtn/my-website' target='_blank' rel="noreferrer">
+                <a href='https://github.com/dnlmrtn/my-website' target='_blank' rel="noreferrer" className='link-button-right'>
                     06.10.2023
                 </a>
             </div>

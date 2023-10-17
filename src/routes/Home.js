@@ -33,7 +33,7 @@ const Home = () => {
                         <div className='text-left'>Degree</div>
                         <div className='text-right'>Math &amp; Eng</div>
                     </div>
-                    <div className="content-container">
+                    <div className="content-container" style={{ borderBottom: '1px solid #000' }}>
                         <div className='text-left'>Working on</div>
                         <div className='text-right'>RecessD</div>
                     </div>
@@ -43,19 +43,21 @@ const Home = () => {
                     </div>
                     <div className="text-left">
                         Finished BASc. at Queen’s in
-                        Math &amp; Engineering, Applied Mechanics option.
-                        Currently building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
+                        Mathematics &amp; Engineering, Applied Mechanics option.
+                        Building ML-based control systems at RecessD, a startup developing wireless industrial automation.<br />
                     </div>
                     <div className='vertical-container'>
                         <div className='vertical-small'>
                         </div>
                     </div>
                     <div className="text-left">
-                        For work history, click <Link to="/about">About Me.</Link><br />
-                        For passion projects, hit <Link to="/projects">Projects.</Link><br />
-                        For my interests, go to <Link to="/personal">Personal.</Link><br />
-                        Feel free to reach out.
+                        See the navbar to learn about my work history, passion projects, and personal interests. Github, LinkedIn, and site repo are linked in the footer.
                     </div>
+                    <div className='vertical-container'>
+                        <div className='vertical'>
+                        </div>
+                    </div>
+                    <div className="text-left">Pick your favourite theme in the bottom left. <br /><br /><br /></div>
                 </div>
             </div>
         </div >

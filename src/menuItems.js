@@ -4,8 +4,8 @@ export const menuItems = [
         url: '/home',
     },
     {
-        title: 'About Me',
-        url: '/about',
+        title: 'Work',
+        url: '/work',
     },
     {
         title: 'Projects',

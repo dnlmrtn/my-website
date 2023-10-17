@@ -1,4 +1,4 @@
-import './About.css'
+import './Work.css'
 import thesisPDF from '../media/Thesis.pdf';
 import bciPDF from '../media/BCI.pdf'
 

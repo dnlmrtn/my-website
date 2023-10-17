@@ -9,6 +9,7 @@
     height: 100%;
     flex-direction: column;
     padding-bottom: 4px;
+    padding-top: 40px;
 }
 
 .rectangle-container {
@@ -36,8 +37,10 @@
     text-align: center;
     font-family: Neue Montreal Bold;
     font-size: 200%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
 }
 
 .text-left {
@@ -45,6 +48,7 @@
     padding-left: 4%;
     font-size: 100%;
     font-family: Neue Montreal;
+    text-decoration: none;
 }
 
 .text-right {
@@ -104,7 +108,7 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
-
+        padding-top: 40px
     }
 
     .round-rectangle {
@@ -139,9 +143,9 @@
     .heading {
         text-align: center;
         font-family: Neue Montreal Bold;
-        font-size: 60px;
-        margin-bottom: 24px;
+        font-size: 64px;
         margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .text-left {
@@ -149,6 +153,7 @@
         padding-left: 10px;
         font-size: 22px;
         font-family: Neue Montreal;
+        color: var(--text-color)
     }
 
     .text-right {

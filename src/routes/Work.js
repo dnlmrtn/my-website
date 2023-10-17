@@ -1,7 +1,7 @@
-import './About.css'
+import './Work.css'
 import '../App.css'
 
-const About = () => {
+const Work = () => {
     return <div className="about-container">
         <div className="about-item">
             <div className='title-container'>
@@ -71,4 +71,4 @@ const About = () => {
     </div >
 };
 
-export default About;
+export default Work;

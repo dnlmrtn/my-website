@@ -48,9 +48,10 @@ nav {
   margin: 0px auto;
   height: 40px;
   padding-top: 4px;
-
+  position: fixed;
   font-family: Neue Montreal;
-  border-bottom: 2px solid var(--text-color)
+  border-bottom: 2px solid var(--text-color);
+  background-color: var(--background-color);
 }
 
 .footer {
@@ -82,7 +83,23 @@ button {
 
 .link-button {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: Neue Montreal;
+  text-decoration: none;
+  border: none;
+}
+
+.link-button-right {
+  display: flex;
+  align-items: right;
+  justify-content: right;
   color: inherit;
   font-size: inherit;
   background-color: transparent;
@@ -135,6 +152,7 @@ body {
   width: 33.33%;
   font-family: Neue Montreal;
   padding-left: 1%;
+  text-decoration: None;
 
 }
 
@@ -148,10 +166,12 @@ body {
 
 .footer-right {
   text-align: right;
+
   width: 33.33%;
   font-family: Neue Montreal;
   height: 30px;
   padding-right: 1%;
+
 }
 
 .color-circle {
@@ -183,14 +203,16 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .vertical {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   width: 2px;
   background-color: var(--text-color);
-  height: 64px;
+  height: 48px;
   font-family: Neue Montreal;
   text-justify: center;
   align-items: center;
@@ -238,7 +260,8 @@ body {
     margin: 0px auto;
     padding: 0px 0px;
     font-family: Neue Montreal;
-    border-bottom: 2px solid var(--text-color)
+    border-bottom: 2px solid var(--text-color);
+    background-color: var(--background-color);
   }
 
 
@@ -251,7 +274,8 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
-    display: flex
+    display: flex;
+    text-decoration: None;
   }
 
   button {
@@ -272,6 +296,22 @@ body {
   .link-button {
     display: flex;
     align-items: center;
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: Neue Montreal;
+    text-decoration: none;
+    border: none;
+  }
+
+  .link-button-right {
+    display: flex;
+    align-items: right;
+    justify-content: right;
     color: inherit;
     font-size: inherit;
     background-color: transparent;
@@ -333,12 +373,12 @@ body {
   }
 
   .color-circle {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    border: 6px solid;
+    border: 4px solid;
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 16px;
   }
 
   .footer-container {
@@ -355,12 +395,15 @@ body {
   }
 
   .footer-center {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 33.33%;
-    font-family: Neue Montreal;
+    font-family: 'Neue Montreal';
     height: 30px;
-
+    text-align: center;
   }
+
 
   .footer-right {
     text-align: right;
